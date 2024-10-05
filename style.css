@@ -1,0 +1,162 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+/* Styling for Name */
+.name {
+    margin-top: 3rem;
+    font-size: 9vh;
+    text-shadow: 0 0 1rem #433878;
+}
+
+/* Winner Message Styling */
+.win {
+    font-size: 2.5rem;
+    color: #433878;
+    font-weight: 700;
+    text-shadow: 0 0 1rem #FFE1FF;
+}
+
+/* Button Styling */
+.newBtn, .rstbtn {
+    height: 10vh;
+    width: 30vh;
+    margin: 2vh;
+    font-size: 4vh;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0.5rem #433878;
+    color: #433878;
+    background-color: #FFE1FF;
+}
+
+.hide {
+    display: none;
+}
+
+/* Body */
+body {
+    background-color: #7E60BF;
+    color: #FFE1FF;
+    text-align: center;
+}
+
+/* Container for centering */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Game board and boxes */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.box {
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1rem;
+    background-color: #FFE1FF;
+    border: none;
+    box-shadow: 0 1rem;
+    font-size: 8vh;
+    color: #433878;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #E4B1F0;
+    transform: translateY(-5px) scale(1.02);
+}
+
+.rstbtn:hover, .newBtn:hover {
+    transform: scale(1.05);
+    background-color: #E4B1F0;
+}
+
+p {
+    padding: 30px;
+}
+
+/* Media Query for 320x480 Portrait Displays */
+@media (max-width: 480px) {
+    .name {
+        font-size: 5vh;
+        margin-top: 1.5rem;
+    }
+
+    .win {
+        font-size: 1.8rem;
+    }
+
+    .newBtn, .rstbtn {
+        height: 6vh;
+        width: 15vh;
+        font-size: 2.5vh;
+    }
+
+    .game {
+        height: 80vmin;
+        width: 80vmin;
+        gap: 1vh;
+    }
+
+    .box {
+        height: 12vh;
+        width: 12vh;
+        font-size: 4vh;
+    }
+
+    .container {
+        height: 60vh;
+    }
+
+    .newBtn, .rstbtn {
+        width: 20vh;
+        font-size: 2vh;
+    }
+}
+
+/* Media Query for Laptop Display */
+@media (min-width: 1024px) {
+    .container {
+        height: 80vh;
+    }
+
+    .game {
+        height: 70vmin;
+        width: 70vmin;
+    }
+
+    .box {
+        height: 20vh;
+        width: 20vh;
+        font-size: 9vh;
+    }
+
+    .newBtn, .rstbtn {
+        height: 12vh;
+        width: 40vh;
+        font-size: 5vh;
+    }
+
+    .win {
+        font-size: 3rem;
+    }
+}
